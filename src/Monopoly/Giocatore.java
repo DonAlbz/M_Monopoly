@@ -5,10 +5,10 @@ public class Giocatore {
 	private String nome;
 	private int posizione;
 	
-	
-	public Giocatore(String nome, int posizione) {
+	//TODO: aggiungere posizione Giocatore sia qui che nella classe Gioco
+	public Giocatore(String nome) {
 		this.nome=nome;
-		this.posizione=posizione;
+		
 	}
 	
 	public String getNome() {

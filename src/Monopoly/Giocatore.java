@@ -1,5 +1,5 @@
 package Monopoly;
-import java.util.*;
+
 public class Giocatore {
 	
 	private String nome;

@@ -6,13 +6,13 @@ import it.unibs.fp.mylib.NumeriCasuali;
 
 public class Dado {
 	private final int VALORE_MIN_DADO=1;
-	private int valoreMaxDado;
+	private final int VALORE_MAX_DADO=6;
 	
 	/**Costruisce un dado con valore massimo indicato dal parametro {@link #valoreMaxDado}
 	 * @param valoreMaxDado indica quale e' il valore massimo che puo' assumere un dado.
 	 */
-	public Dado(int valoreMaxDado){
-		this.valoreMaxDado=valoreMaxDado;
+	public Dado(){
+		
 	}
 
 	/**Fornisce il risultato del tiro del dado.
@@ -20,7 +20,7 @@ public class Dado {
 	 */
 	public int tiro() {
 		int tiro;
-		tiro = NumeriCasuali.estraiIntero(VALORE_MIN_DADO, valoreMaxDado);
+		tiro = NumeriCasuali.estraiIntero(VALORE_MIN_DADO, VALORE_MAX_DADO);
 		return tiro;
 	}
 		

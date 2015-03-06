@@ -2,8 +2,8 @@ package Monopoly;
 
 public class Tabellone {
 
-	final private Casella casella [];
-	final private int dim;
+	private final Casella casella [];
+	private final int dim;
 	
 	public Tabellone(int dim) {
 		
@@ -17,6 +17,10 @@ public class Tabellone {
 	
 	public void addCasella(Casella c, int posizione) {
 		c=casella[posizione];
+	}
+	
+	public void move() {
+		
 	}
 
 
